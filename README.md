@@ -1,24 +1,25 @@
-== NodeApp ==
+== www.emitent.uz ==
+by Avesta Investment Group & "TAT-REESTR" LLC
 
-Koneksi NodeJs dengan MongoDB menggunakan Mongoose dengan Bootstrap style buat UI-nya.
+This app is built using Node.JS. For any questions, please contact Vlad at
+vlad.azimhodjaev@avestagroup.com
 
-Instalasi
+Installation
 
-1. Set environment variabel
+Set environment variables
 
-    $ export NODE_ENV=development
+$ export NODE_ENV=development
 
-2. Jalankan database MongoDB sesuai dengan sistem anda.
+Use MongoDB for database
 
-Jika MongoDB tidak berjalan pada komputer lokal, setting parameter
-bisa diset pada file server.js
+Site is launched through server.js
 
-    app.set('MONGODB_HOST', 'domainmu.com');
-    app.set('MONGODB_PORT', '27017');
-    app.set('MONGODB_USERNAME', 'usernamemu');
-    app.set('MONGODB_PASSWORD', 'passwordmu');
+app.set('MONGODB_HOST', 'domainmu.com');
+app.set('MONGODB_PORT', '27017');
+app.set('MONGODB_USERNAME', 'usernamemu');
+app.set('MONGODB_PASSWORD', 'passwordmu');
+Node program can be used to launch everything.
 
-3. Untuk menjalankan server node ketik
-
+$ node server.js
     $ node server.js
 
