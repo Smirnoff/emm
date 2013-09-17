@@ -49,11 +49,12 @@
             <form action="/user/create" method="POST" name="regForm"  id="registerForm">
                 <div class="row">
                     <div class="text_input small top_label">
-                        <label>Полное название организации</label>
+                        <label>Название организации (на латинице)</label>
                         <input type="text" value="<%= org %>" name="organization"  required />
                     </div>
                     <div class="text_input small top_label">
-                        <select name="dp" style="height:40px; width:270px;">
+                        <label>Тип организации</label>
+                        <select name="dp" class="select_list" style="height:40px; width:270px;">
                             <option value="OАО">OAО</option>
                             <option value="ЗАО">ЗАО</option>
                             <option value="АК">АК</option>
@@ -72,12 +73,12 @@
                 </div>
                 <div class="row">
                     <div class="text_input small top_label">
-                        <label>ИНН</label>
+                        <label>ИНН (из 9 цифр)</label>
                         <input type="number"  value="<%= inn %>" name="inn" maxlength="9" required=""/>
                        <!-- <div class="error_text">Проверьте правильность заполнения поля</div>  -->
                     </div>
                     <div class="text_input small fr top_label">
-                        <label>Выберите пароль</label>
+                        <label>Выберите пароль (мин. 6 символов)</label>
                         <input type="password" value="" name="password" required/>
                     </div>
                     <div class="clear"></div>
@@ -95,8 +96,8 @@
                 </div>
                 <div class="row">
                     <div class="select_list top_label small">
-                        <label>Спосиб поддержания</label>
-                        <select name="connect" style="height:40px; width:270px;">
+                        <label>Способ подтверждения организации</label>
+                        <select name="connect" class="select_list" style="height:40px; width:270px;">
                             <option value="call">Почта</option>
                             <option value="fax">Fax</option>
                             <option value="email">E-mail</option>
@@ -119,7 +120,7 @@
                     <div class="clear"></div>
                 </div>
                 <div class="row">
-                    <input type="checkbox" id="myCheck" name="check" required> <span class="checkbox_descr">Условия соглашения</span>
+                    <input type="checkbox" id="myCheck" name="check" required> <span class="checkbox_descr">Соглашаюсь с условиями пользования</span>
                 </div>
                 <div class="row">
 
