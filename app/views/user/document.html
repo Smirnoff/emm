@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="/css/style.css" rel="stylesheet" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43862932-1', 'emitent.uz');
+        ga('send', 'pageview');
+
+    </script>
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+  <title>Документ</title>
+</head>
+
+<body>
+    <header>
+        <div class="gradient short">
+            <div class="main_grid gradient short">
+                <div class="top_block">
+                    <a href="/user/home" class="logo">Эмитенты<br />Узбекистана</a>
+                    <% if(usercheck){ %>
+                    <div class="user_action">
+                        <div class="select_list fl">
+                            <div class="profile current"><%= username %></div>
+                            <div class="value_list">
+                                <ul>
+                                    <li data-id="0"><a href="/user/upload">Разместить документ</a></li>
+                                    <li data-id="0"><a href="/user/company">Мои документы</a></li>
+                                    <li data-id="0"><a href="/logout">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div><a href="/user/upload"><button class="green_btn">Разместить документ</button></a>
+                    </div>
+                    <div class="clear"></div>
+                    <% }else{ %>
+                    <div class="user_action"><a href="/user/login">Авторизоваться</a> или <a href="/user/registration"><button class="green_btn">Разместить документ</button></a></div>
+                    <div class="clear"></div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main_grid center_block">
+        <div class="control_block">
+            <div class="fl">
+                <a href="/user/company_other/0.<%= viewdoc[0]['from'] %>"><button class="gray_btn" id="other_doc">Другие файлы эмитента</button></a>
+            </div>
+            <div class="fr">
+              <form action="<%= postpdf %>" method="post">
+                <input type="hidden" value="<%= viewdoc_base %>" name="body">
+                <input type="submit" title="Сохранить" class="gray_btn fr" value="pdf">
+              </form>
+            </div>
+            <div class="fr">
+                    <button title="Распечатать" class="gray_btn fl"><i class="print_btn"></i></button>
+
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+        <div class="sheet2" id="example">
+            <div style="font-size:11px; border-bottom:1px solid #ccc;">
+                    <p>Организации :<%= viewuser[0]['organization'] %></p>
+                    <p>ИНН : <%= viewuser[0]['inn'] %></p>
+                    <p>Адрес :<%= viewuser[0]['adress'] %></p>
+                      <br/>
+            </div><br/>
+                <%= viewdoc[0]['body'] %>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <div class="main_grid">
+            <div class="left">
+                <div class="copyright">© 2013 OOO "TAT-REESTR". Все права защищены.</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">RSS-Подписка</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="soc_list">
+                    <ul>
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="rss"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

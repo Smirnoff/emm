@@ -1,0 +1,110 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="/css/style.css" rel="stylesheet" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43862932-1', 'emitent.uz');
+        ga('send', 'pageview');
+
+    </script>
+
+  <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+  <![endif]-->
+  <title>Авторизация</title>
+</head>
+
+<body  class="white_bg">
+    <header>
+        <div class="gradient short">
+            <div class="main_grid gradient short">
+                <div class="top_block">
+                    <a href="/user/home" class="logo">Эмитенты<br />Узбекистана</a>
+                    <div class="user_action"><a href="/user/login">Авторизоваться</a> или <a href="/user/registration"><button class="green_btn">Разместить документ</button></a></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main_grid center_block">
+        <div class="simple_content">
+            <h2>Авторизация</h2>
+            <div class="separator"></div>
+            <div class="auth_block">
+                <div class="left">
+                    <a href="#">Восстановить пароль?</a>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <%= message %>
+                    </div>
+                    <div class="form standard">
+                        <form action="/user/login" method="POST">
+                            <div class="row">
+                                <div class="text_input medium top_label">
+                                    <label>Email пользователя</label>
+                                    <input type="email" value="" name="username" placeholder="Email" required/>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <div class="text_input medium top_label">
+                                    <label>Пароль</label>
+                                    <input type="password" value="" name="password" placeholder="Password" required/>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="row">
+                                <input class="green_grd_btn" type="submit" value="Войти в аккаунт" >
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <div class="main_grid">
+            <div class="left">
+                <div class="copyright">© 2013 OOO "TAT-REESTR". Все права защищены.</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">RSS-Подписка</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="soc_list">
+                    <ul>
+                        <li class="facebook"><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="rss"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>
