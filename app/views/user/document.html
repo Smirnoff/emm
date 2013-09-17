@@ -59,9 +59,21 @@
                 <a href="/user/company_other/0.<%= viewdoc[0]['from'] %>"><button class="gray_btn" id="other_doc">Другие файлы эмитента</button></a>
             </div>
             <div class="fr">
+            <label class="gray_btn fl">         <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_vk"></a>
+<a class="addthis_button_odnoklassniki_ru"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_mymailru"></a>
+<a class="addthis_button_email"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520a26ce53c4c4df"></script>
+<!-- AddThis Button END --></label>
               <form action="<%= postpdf %>" method="post">
                 <input type="hidden" value="<%= viewdoc_base %>" name="body">
-                <input type="submit" title="Сохранить" class="gray_btn fr" value="pdf">
+                <!--<input type="submit" title="Сохранить" class="gray_btn fr" value="pdf"> -->
               </form>
             </div>
             <div class="fr">
