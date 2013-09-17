@@ -83,7 +83,7 @@
                         <% if(catlist.length>0){ %>
                         <label>В категории</label>
                         <div class="select_list" style="width: 399px;">
-                            <select name="types" style="width:399px; height:40px;">
+                            <select name="types" class="select_list" style="width:399px; height:40px;">
                                 <option name="types" value="">Все</option>
                                 <% for(var i=0; i<catlist.length;i++){ %>
                                 <option value="<%= catlist[i]['id'] %>"><%= catlist[i]['title'] %></option>
@@ -95,11 +95,11 @@
                     </div>
                     <div class="row">
                         <label>Дата публикации</label>
-                        <div class="text_input" style="width: 100px;">
+                        <div class="text_input" style="width: 115px;">
                             <input type="text" name="startdate" value="2013.07.19"/>
                         </div>
                         <label>&nbsp;&nbsp;до</label>
-                        <div class="text_input" style="width: 100px;">
+                        <div class="text_input" style="width: 115px;">
                             <input type="text" name="enddate" value="<%= dates %>"/>
                         </div>
                         <div class="clear"></div>
