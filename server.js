@@ -388,6 +388,16 @@ app.get("/user/login", function (req, res) {
         });
 });
 
+// To add new pages, copy from here
+/*app.get("/user/about", function (req, res) {
+        res.render('user/about', {
+            title:apptitle,
+            message:'',
+            username:req.session.loggedUs
+        });
+});
+*/
+
 function getNowDate()
 {
     date = new Date();
@@ -471,6 +481,14 @@ app.post('/user/login', function (req, res) {
 
 app.get('/show_reg', function (req, res) {
     res.render("user/after_reg", {
+        title:apptitle,
+
+    });
+});
+
+// add new page version 2
+app.get('/aboutus', function (req, res) {
+    res.render("user/about", {
         title:apptitle,
 
     });
