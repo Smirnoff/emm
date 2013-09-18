@@ -59,7 +59,7 @@ app.configure(function () {
     app.use(express.logger());
     app.use(express.bodyParser({
         keepExtensions: true,
-        uploadDir: __dirname + '/app/tmp',
+        uploadDir: __dirname + '/tmp',
         limit: '2mb'
     }));
     app.use(express.methodOverride());
@@ -860,9 +860,11 @@ var deleteAfterUpload = function(req) {
             {
                 new_doc = new_doc + new_path[i];
             }        */
-            new_doc =  req.files.myFile.path;
+            //new_doc =  req.files.myFile.path;
+            var serverpass = "/tmp/" + req.files.myFile.name;
+            require("fs").rename(req.files.myFile.path, __dirname + "/app" + serverpass);
             var doc = new Doc({
-                href:new_doc,
+                href: serverpass, //new_doc,
                 types:req.body.types[0],
                 check:req.body.types[1],
                 date:dates,
