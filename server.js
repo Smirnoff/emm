@@ -494,6 +494,13 @@ app.get('/about', function (req, res) {
     });
 });
 
+// add new page version 2 this one for faq // when changed, server needs to be restarted.
+app.get('/faq', function (req, res) {
+    res.render("user/faq", {
+        title:apptitle,
+
+    });
+});
 
 
 function htmlEscape(text)
