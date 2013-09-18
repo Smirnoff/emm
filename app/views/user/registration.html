@@ -48,9 +48,13 @@
         <div class="form standard">
             <form action="/user/create" method="POST" name="regForm"  id="registerForm">
                 <div class="row">
+                    
+                   <h5> Все данные должны быть согласно учредительным документам.</h5><br>
+
                     <div class="text_input small top_label">
-                        <label>Название организации (на латинице)</label>
-                        <input type="text" value="<%= org %>" name="organization"  required />
+
+                        <label>Название организации <small>(на латинице)</small></label>
+                        <input type="text" value="<%= org %>" name="organization" required />
                     </div>
                     <div class="text_input small top_label">
                         <label>Тип организации</label>
@@ -73,12 +77,12 @@
                 </div>
                 <div class="row">
                     <div class="text_input small top_label">
-                        <label>ИНН (из 9 цифр)</label>
+                        <label>ИНН <small>(из 9 цифр) </small></label>
                         <input type="number"  value="<%= inn %>" name="inn" maxlength="9" required=""/>
                        <!-- <div class="error_text">Проверьте правильность заполнения поля</div>  -->
                     </div>
                     <div class="text_input small fr top_label">
-                        <label>Выберите пароль (мин. 6 символов)</label>
+                        <label>Выберите пароль <small>(минимум 6 символов)</small></label>
                         <input type="password" value="" name="password" required/>
                     </div>
                     <div class="clear"></div>
