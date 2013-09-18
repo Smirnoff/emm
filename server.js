@@ -486,13 +486,15 @@ app.get('/show_reg', function (req, res) {
     });
 });
 
-// add new page version 2
-app.get('/aboutus', function (req, res) {
+// add new page version 2 // when changed, server needs to be restarted.
+app.get('/about', function (req, res) {
     res.render("user/about", {
         title:apptitle,
 
     });
 });
+
+
 
 function htmlEscape(text)
 {
