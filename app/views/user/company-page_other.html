@@ -113,10 +113,14 @@
                     <!--<th>Файл<span class="arrow"></span></th>-->
                 </tr>
                 <% for(var i = 0;i<doclists.length; i++){
-                if(doclists[i]['t'] == "1"){ hrefs="/tmp/"+doclists[i]['href']; } else{hrefs="/user/viewdoc/"+doclists[i]['_id'];}
-                %>
+                 
 
-                <tr class="click_doc" id="<%= hrefs %>">
+                  var hrefs2 = "";
+                            if(doclists[i]['t'] == "1"){ hrefs=doclists[i]['href'];  hrefs2="/user/company_other/0."+doclists[i]['from']; } else{  hrefs="/user/viewdoc/"+doclists[i]['_id'];}
+                    %>
+                                    <tr  class="click_doc" id="<%= hrefs %>" alt="">
+
+
                     <%  if(doclists[i]['t'] == "1"){ %>
                     <td width="40"><img src="/img/download.png"/></td>
                     <% }else { %>
