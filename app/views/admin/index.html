@@ -2,26 +2,86 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pl" xml:lang="pl">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="author" content="Ahmedov Ravshanbek" />
-<title>SimpleAdmin</title>
+<meta name="author" content="Emitent.uz" />
+<title>Эмитент админ</title>
 <link rel="stylesheet" type="text/css" href="/css/login.css" media="screen" />
 </head>
+
+<body  class="wrap">
+<header>
+    <div class="gradient short">
+        <div class="main_grid gradient short">
+            <div class="top_block">
+                <!--<a href="/user/home" class="logo">Эмитенты<br/>Узбекистана</a> -->
+                <!-- taking top menu out since we will not need it
+                <div class="user_action"><a href="/user/login">Авторизоваться</a> или <a href="/user/registration"><button class="green_btn">Разместить документ</button></a></div>
+                -->
+                <div class="clear"></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
 <body>
+
 <div class="wrap">
+
 	<div id="content">
 		<div id="main">
 			<div class="full_w">
 				<form action="/admin/login" method="post">
-					<label for="login">Username:</label>
+					<label for="login">Пользователь:</label>
 					<input id="login" name="username" class="text" />
-					<label for="pass">Password:</label>
+					<label for="pass">Пароль:</label>
 					<input id="pass" name="password" type="password" class="text" />
-					<button type="submit" class="ok">Login</button>
+					<button type="submit" class="ok">Войти</button>
 				</form>
 			</div>
 		</div>
 	</div>
-</div>
 
+</div>
 </body>
+
+<footer>
+    <div class="main_grid">
+        <div class="left">
+            <div class="copyright">© 2013 OOO "TAT-REESTR". </div>
+            <div class="menu">
+               <!--
+                <ul>
+                         <li><a href="../about">О проекте</a></li>
+                        <li><a href="../faq">Помощь</a></li>
+                        <li><a href="../terms">Условия использования</a></li>
+                        <li><a href="../news">Новости</a></li>
+                        
+                </ul>
+				-->
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="soc_list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    CKEDITOR.replace( 'content', {
+        toolbar: 'Basic'
+    });
+</script>
+</body>
+</html>
 </html>

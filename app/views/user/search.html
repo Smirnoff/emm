@@ -124,9 +124,12 @@
                           for(var j=0; j<users.length;j++){
                               if(users[j]['_id']== listdoc[i]['from']){
                 var hrefs = "";
-                if(listdoc[i]['t'] == "1"){ hrefs="/tmp/"+listdoc[i]['href']; } else{hrefs="/user/viewdoc/"+listdoc[i]['_id'];}
-                %>
-                <tr  class="click_doc" id="<%= hrefs %>">
+                var hrefs2 = "";
+                if(listdoc[i]['t'] == "1"){ hrefs=listdoc[i]['href'];  hrefs2="/user/company_other/0."+listdoc[i]['from']; } else{  hrefs="/user/viewdoc/"+listdoc[i]['_id'];}
+                    %>
+                                    <tr  class="click_doc" id="<%= hrefs %>" alt="<%= hrefs2 %>">
+
+
                     <%  if(listdoc[i]['t'] == "1"){ %>
                     <td width="40"><img src="/img/download.png"/></td>
                     <% }else { %>
