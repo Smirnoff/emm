@@ -149,7 +149,7 @@ $(document).ready(function(){
 
     $(".print_btn").click(function(){
         w = window.open();
-        w.document.write("<h3 style='color:#ccc;border-bottom:1px solid #ccc; width:100%;'>Company name</h3>"+$(".sheet2").html());
+        w.document.write("<h1 style='color:#ccc;border-bottom:1px solid #ccc; width:100%;'>Распечатано на www.emitent.uz</h1>"+$(".sheet2").html());
         w.print();
         w.close();
     }) ;
