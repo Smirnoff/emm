@@ -21,7 +21,7 @@
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
   <![endif]-->
-  <title>Документ</title>
+  <title>Страница эмитента</title>
 </head>
 
 <body>
@@ -35,12 +35,12 @@
                         <div class="profile current"><%= username %></div>
                         <div class="value_list">
                             <ul>
-                                <li data-id="0"><a href="/user/upload">Разместить документ</a></li>
+                                <li data-id="0"><a href="/user/upload">Добавить документ</a></li>
                                 <li data-id="0"><a href="/user/company">Мои документы</a></li>
                                 <li data-id="0"><a href="/logout">Выйти</a></li>
                             </ul>
                         </div>
-                    </div><a href="/user/upload"><button class="green_btn">Разместить документ</button></a>
+                    </div><a href="/user/upload"><button class="green_btn">Добавить документ</button></a>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -85,7 +85,7 @@
             <table cellspacing="0">
                 <tr>
                     <th></th>
-                    <th>Название компании<span class="arrow"></span></th>
+                    <th>Название эмитента<span class="arrow"></span></th>
                     <th>Дата<span class="arrow"></span></th>
                 </tr>
                 <% for(var i = 0;i<doclists.length; i++) {
@@ -114,20 +114,20 @@
                     var p1 = pages-1; var p2 = ++pages;
                     %>
                      <% if(idlc.length>0){ %>
-                         <li><a href="/user/company/0.<%= idlc %>">Первый</a></li>
+                         <li><a href="/user/company/0.<%= idlc %>">Первая страница</a></li>
                          <li><a href="/user/company/<%= p1 %>.<%= idlc %>"><img style="margin-top:5px;" src="/img/percol.gif" /></a></li>
                      <% }else{ %>
-                          <li><a href="/user/company/0">Первый</a></li>
+                          <li><a href="/user/company/0">Первая страница</a></li>
                           <li><a href="/user/company/<%= p1 %>"><img style="margin-top:5px;" src="/img/percol.gif" /></a></li>
                      <% } %>
                     <% }else{p2 = 1; }%>
                     <% if(doclists.length>=limits){ %>
                         <% if(idlc.length>0){ %>
                             <li><a href="/user/company/<%= p2 %>.<%= idlc %>"><img style="margin-top:5px;" src="/img/nextcol.gif" /></a></li>
-                            <li><a href="/user/company/<%= last %>.<%= idlc %>">Последний</a></li>
+                            <li><a href="/user/company/<%= last %>.<%= idlc %>">Последняя страница</a></li>
                         <% }else{ %>
                             <li><a href="/user/company/<%= p2 %>"><img style="margin-top:5px;" src="/img/nextcol.gif" /></a></li>
-                            <li><a href="/user/company/<%= last %>">Последний</a></li>
+                            <li><a href="/user/company/<%= last %>">Последняя страница</a></li>
                         <% } %>
                     <% } %>
                     <% } %>
