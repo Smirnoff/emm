@@ -95,7 +95,7 @@
                     %>
                                     <tr  class="click_doc" id="<%= hrefs %>" alt="<%= hrefs2 %>">
                                        <%  if(listdoc[i]['t'] == "1"){ %>
-                                         <td width="40"><img src="/img/download.png"/></td>
+                                         <td width="80"><img src="/img/download.png"/></td>
                                         <% }else { %>
                                           <td width="40"></td>
                                         <% } %>
@@ -116,13 +116,13 @@
                     <%    if(pages>0){
                             var p1 = pages-1; var p2 = ++pages;
                     %>
-                        <li><a href="/user/home">Первый</a></li>
+                        <li><a href="/user/home">Первая страница</a></li>
                         <li><a href="/user/home/<%= p1 %>"><img style="margin-top:5px;" src="/img/percol.gif" /></a></li>
 
                     <% }else{p2 = 1; }%>
                              <% if(listdoc.length>=limits){ %>
                                  <li><a href="/user/home/<%= p2 %>"><img style="margin-top:5px;" src="/img/nextcol.gif" /> </a></li>
-                                 <li><a href="/user/home/<%= last %>">Последний</a></li>
+                                 <li><a href="/user/home/<%= last %>">Последняя страница</a></li>
                              <% } %>
                      <% } %>
                     <!--<li class="disable">. . .</li> -->
