@@ -21,7 +21,7 @@
   <!--[if lt IE 9]>
     <script src="/js/html5shiv.js"></script>
   <![endif]-->
-  <title>Поиск</title>
+  <title>Все эмитенты</title>
 </head>
 
 <body>
@@ -61,17 +61,17 @@
             <ul>
                 <li class="news"><a href="/user/home">Новости от <%= dates %></a></li>
                 <li class="folder"><a href="/user/search">Поиск по документам</a></li>
-                <li class="company active"><a href="/user/all_company">Все компании</a></li>
+                <li class="company active"><a href="/user/all_company">Все эмитенты</a></li>
             </ul>
         </div>
         <div class="tabs_content sheet">
-            <h2>Все компании</h2>
+            <h2>Все эмитенты</h2>
 
             <div class="separator"></div>
             <% if(complists.length>0){ %>
             <table cellspacing="0">
                 <tr>
-                    <th>Название компании<span class="arrow"></span></th>
+                    <th>Название эмитента<span class="arrow"></span></th>
                 </tr>
 
                         <%
