@@ -9,7 +9,8 @@
 		"underscore": "1.4.x",
 		"mongoose": "3.4.x",
         "jade": ">= 0.0.1",
-        "connect":">= 1.9.1"
+        "connect":">= 1.9.1",
+        "sendgrid": "0.3.0-rc.1.7"
 	},
 	"subdomain": "nodeapps.junwatu",
 	"scripts": {

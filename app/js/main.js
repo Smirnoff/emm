@@ -39,7 +39,7 @@ $(document).ready(function(){
 
         xhr.onload = function() {
             var sts ="";
-            if(this.statusText  == "OK"){sts = "Ваш файл успешно загружен"}else{sts= "Файл не загружен может быть из-за большой объёма."};
+            if(this.statusText  == "OK"){sts = "Ваш файл успешно загружен"}else{sts= "Файл не может быть загружен из-за большого объёма."};
             alert(sts);
             $('div.progress').hide();
             var hr = "/user/upload";
@@ -149,7 +149,7 @@ $(document).ready(function(){
 
     $(".print_btn").click(function(){
         w = window.open();
-        w.document.write("<h1 style='color:#ccc;border-bottom:1px solid #ccc; width:100%;'>Распечатано на www.emitent.uz</h1>"+$(".sheet2").html());
+        w.document.write("<h2 style='color:#ccc;border-bottom:1px solid #ccc; width:100%;'>Распечатано на www.emitent.uz</h2>"+$(".sheet2").html());
         w.print();
         w.close();
     }) ;
