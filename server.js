@@ -29,6 +29,7 @@ UserSchema = new mongoose.Schema({
     organization:'string',
     inn:'string',
     phone:'string',
+    fax : 'string',
     call:'string',
     adress:'string',
     fio:'string',
@@ -411,12 +412,73 @@ function getNowDate()
     return dates;
 }
 
+app.get('/user/change',check_user, function (req, res) {
+    res.render("user/change", {
+        title:apptitle,
+        msg: "",
+        username:req.session.loggedUs,
+        usercheck:req.session.loggedIn
+    });
+});
+
+app.post('/user/change_pwd',check_user, function(req, res){
+    var oldpwd = req.body.oldpwd;
+    var newpwd = req.body.newpwd;
+    var repnewpwd = req.body.repnewpwd;
+    User.find({username:req.session.loggedUs, password:crypto.createHash('md5').update(oldpwd).digest("hex")}, function (err, user) {
+        if(user.length>0)
+        {
+            if(newpwd == repnewpwd)
+            {
+                if(newpwd.length>5 && repnewpwd.length>5){
+                    User.findOne({username:req.session.loggedUs, password:crypto.createHash('md5').update(oldpwd).digest("hex")}, function (err, user_ch) {
+                        user_ch.password  =crypto.createHash('md5').update(newpwd).digest("hex");
+                        user_ch.save();
+                    });
+
+                    res.render("user/change", {
+                        title:apptitle,
+                        msg: "Пароль изменен",
+                        username:req.session.loggedUs,
+                        usercheck:req.session.loggedIn
+                    });
+                }else{
+                    res.render("user/change", {
+                        title:apptitle,
+                        msg: "Пароль не должен быть меньше чем 6 символов.",
+                        username:req.session.loggedUs,
+                        usercheck:req.session.loggedIn
+                    });
+                }
+            }else{
+                res.render("user/change", {
+                    title:apptitle,
+                    msg: "Пароли не совпадают.",
+                    username:req.session.loggedUs,
+                    usercheck:req.session.loggedIn
+                });
+            }
+
+        }else{
+            res.render("user/change", {
+                title:apptitle,
+                msg: "Старый пароль не правильный.",
+                username:req.session.loggedUs,
+                usercheck:req.session.loggedIn
+            });
+        }
+
+    });
+
+});
+
 app.get('/user/registration', function (req, res) {
     res.render("user/registration", {
         title:apptitle,
         org:"",
         adr:"",
         tel:"",
+        fax:"",
         em:"",
         inn:"",
         fio:"",
@@ -538,6 +600,7 @@ app.post("/user/create", function (req, res) {
     var organization  = htmlEscape2(req.body.organization);
     var inn         = htmlEscape(req.body.inn);
     var phone = htmlEscape(req.body.phone);
+    var fax = htmlEscape(req.body.fax);
     var call = htmlEscape(req.body.connect);
     var adress = htmlEscape(req.body.adress);
     var fio = htmlEscape(req.body.fio);
@@ -550,6 +613,7 @@ app.post("/user/create", function (req, res) {
         check(inn).notEmpty().isInt();
         check(phone).notEmpty();
         check(call).notEmpty();
+        check(fax).notEmpty();
         check(dp).notEmpty();
         check(adress).notEmpty();
         check(fio).notEmpty();
@@ -567,6 +631,7 @@ app.post("/user/create", function (req, res) {
                                     org:organization,
                                     adr:adress,
                                     tel:phone,
+                                    fax:fax,
                                     em:username,
                                     inn:inn,
                                     fio:fio,
@@ -582,6 +647,7 @@ app.post("/user/create", function (req, res) {
                                     inn:inn,
                                     phone:phone,
                                     call:call,
+                                    fax:fax,
                                     adress:adress,
                                     fio:fio,
                                     status:"0"
@@ -600,6 +666,7 @@ app.post("/user/create", function (req, res) {
                             org:organization,
                             adr:adress,
                             tel:phone,
+                            fax:fax,
                             em:username,
                             inn:inn,
                             fio:fio,
@@ -612,6 +679,7 @@ app.post("/user/create", function (req, res) {
                         org:organization,
                         adr:adress,
                         tel:phone,
+                        fax:fax,
                         em:username,
                         inn:inn,
                         fio:fio,
@@ -624,6 +692,7 @@ app.post("/user/create", function (req, res) {
                        org:organization,
                        adr:adress,
                        tel:phone,
+                       fax:fax,
                        em:username,
                        inn:inn,
                        fio:fio,
@@ -636,6 +705,7 @@ app.post("/user/create", function (req, res) {
                       org:organization,
                       adr:adress,
                       tel:phone,
+                      fax:fax,
                       em:username,
                       inn:inn,
                       fio:fio,
@@ -650,6 +720,7 @@ app.post("/user/create", function (req, res) {
             org:organization,
             adr:adress,
             tel:phone,
+            fax:fax,
             em:username,
             inn:inn,
             fio:fio,
