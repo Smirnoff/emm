@@ -564,6 +564,14 @@ app.get('/faq', function (req, res) {
     });
 });
 
+// add new page version 2 this one for faq // when changed, server needs to be restarted.
+app.get('/terms', function (req, res) {
+    res.render("user/terms", {
+        title:apptitle,
+
+    });
+});
+
 // add new page version 2 this one for password forgotten // when changed, server needs to be restarted.
 app.get('/password', function (req, res) {
     res.render("user/password", {
