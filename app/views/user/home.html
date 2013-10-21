@@ -118,11 +118,11 @@
                             var p1 = pages-1; var p2 = ++pages;
                     %>
                         <li><a href="/user/home">Первая страница</a></li>
-                        <li><a href="/user/home/<%= p1 %>"><img src="/img/percol.gif" /></a></li>
+                        <li><a href="/user/home/<%= p1 %>"><img style="vertical-align: middle;" src="/img/percol.gif" /></a></li>
 
                     <% }else{p2 = 1; }%>
                              <% if(listdoc.length>=limits){ %>
-                                 <li><a href="/user/home/<%= p2 %>"><img src="/img/nextcol.gif" /> </a></li>
+                                 <li><a href="/user/home/<%= p2 %>"><img style="vertical-align: middle;" src="/img/nextcol.gif" /> </a></li>
                                  <li><a href="/user/home/<%= last %>">Последняя страница</a></li>
                              <% } %>
                      <% } %>
