@@ -18,9 +18,6 @@ var express = require("express"),
     apptitle = "Эмитенты Узбекистана",
     pdfpost  = "http://test1.ru/examples/test.php",
     MemoryStore = require('connect').session.MemoryStore,
-    analytics = require('analytics-node'); // this is a new analytics for node.js
-    analytics.init({secret: 'cauv49zzp147c5ur3cr5'}); // this line initializes the node.js analytics
-
 
 /*
  * UserSchema
