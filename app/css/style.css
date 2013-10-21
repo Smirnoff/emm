@@ -136,7 +136,7 @@ textarea{resize: none;}
 
 .center_block .tabs_content{float: right;width: 760px;background: #fff;padding: 50px 50px 0 50px;margin: 0;}
 .center_block h2 .purple_btn{position: relative;top:-4px;}
-.center_block .tabs_content table{margin-top: 25px;font-size: 16px;width: 860px;padding-bottom: 20px;}
+.center_block .tabs_content table{margin-top: 25px;font-size: 14px;width: 860px;padding-bottom: 20px;}
 /*.center_block .tabs_content table tr td{padding: 10px 0;width: 40%;}*/
 .center_block .tabs_content table th{text-align: left;font-size: 22px;padding-bottom: 20px;}
 .center_block .tabs_content table th .arrow{display: inline-block;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;margin-left: 10px;position: relative;top: -3px;}
@@ -334,6 +334,7 @@ border-bottom-left-radius: 5px;
 .sheet .bottom_text{margin-top: 60px;text-align: right;font-weight: bold;}
 .sheet table{width: 111%;margin: 0 -50px;}
 .sheet table tr td{padding: 10px 0;}
+.sheet .main_description { padding: 10px 20px 10px 10px; }
 .sheet table tr td:first-child,
 .sheet table tr th:first-child{padding-left: 50px;}
 .sheet table th{text-align: left;font-size: 22px;padding-bottom: 20px;}
