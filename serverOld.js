@@ -975,8 +975,7 @@ var deleteAfterUpload = function(req) {
                 new_doc = new_doc + new_path[i];
             }        */
             //new_doc =  req.files.myFile.path;
-            var number = Math.floor((Math.random()*1000)+1); // this line adds random numbers to pdfs
-            var serverpass = "/tmp/" + number+"_"+req.files.myFile.name; //saves to temp folder
+            var serverpass = "/tmp/" + req.files.myFile.name;
             require("fs").rename(req.files.myFile.path, __dirname + "/app" + serverpass);
             var doc = new Doc({
                 href: serverpass, //new_doc,
