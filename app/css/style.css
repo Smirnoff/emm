@@ -333,7 +333,7 @@ border-bottom-left-radius: 5px;
 .sheet p{margin-bottom: 20px;}
 .sheet .bottom_text{margin-top: 60px;text-align: right;font-weight: bold;}
 .sheet table{width: 111%;margin: 0 -50px;}
-.sheet table tr td{padding: 10px 0;}
+.sheet table tr td{padding: 10px 10px 0 0;}
 .sheet table tr td:first-child,
 .sheet table tr th:first-child{padding-left: 50px;}
 .sheet table th{text-align: left;font-size: 22px;padding-bottom: 20px;}
