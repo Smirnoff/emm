@@ -350,7 +350,7 @@ border-bottom-left-radius: 5px;
 }
 
 .company_descr{background: #fff;}
-.company_descr .main_grid{background: #fff;padding: 40px 0;text-align: center;}
+.company_descr .main_grid{background: #fff;padding: 40px 0;}
 .company_descr .main_grid .logo{display: inline-block;margin-right: 10px;}
 .company_descr .main_grid .info{display: inline-block;position: relative;width:auto;top: 0;}
 .company_descr .main_grid .title{font-weight: normal;color:#666666;font-size: 36px;text-align: left;margin-bottom: 15px;}
