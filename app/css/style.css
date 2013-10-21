@@ -37,7 +37,8 @@ textarea{resize: none;}
 .top_block .user_action .select_list ul a{border-top: 1px solid #5e6569;border-bottom: 1px solid #172833;color: #fff;font-size: 14px;font-weight: bold;padding: 10px;}
 .top_block .user_action .select_list ul a:hover{background: #182b37;border-bottom: 1px solid #172833;border-top: 1px solid #16252f;}
 
-.green_btn{display: block;border: 0 !important;background: url(../img/green_btn.png);width: 217px;height: 42px;color: #fff;font-size: 18px;cursor: pointer;}
+.green_btn{display: block;border: 0 !important;background: url(../img/green_btn.png);width: 200px;height: 42px;color: #fff;font-size: 18px;cursor: pointer;}
+.green_btn2{display: block;border: 0 !important;background: url(../img/green_btn2.png);width: 217px;height: 42px;color: #fff;font-size: 18px;cursor: pointer;}
 .purple_btn{display: inline-block;color:#fff;font-size: 18px;padding: 6px 12px;border: 0;cursor: pointer;
     background: rgb(144,127,174);
     background: -moz-linear-gradient(top,  rgb(144,127,174) 0%, rgb(113,98,144) 100%);
@@ -234,7 +235,7 @@ border-bottom-left-radius: 5px;
 }
 .select_list .current{height: 32px;overflow: hidden;}
 .select_list .current span{display: block;width: 1000px;}
-.select_list .arrow {position: absolute;right: 12px;top: 17px;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;z-index: 1;}
+.select_list .arrow, .gray_btn .arrow {position: absolute;right: 12px;top: 17px;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;z-index: 1;}
 .value_list li{padding: 5px;color: #555;border-top: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;cursor: pointer;}
 .value_list li:hover{background: #e1e1e1;border-bottom: 1px solid #fefefe;border-top: 1px solid #d5d6d7;}
 .value_list li a,
@@ -279,7 +280,7 @@ border-bottom-left-radius: 5px;
 .control_block{margin: 25px 0;}
 .control_block .select_list{width: 150px;height: 32px;float: left;font-size: 18px;}
 .control_block .select_list .current{padding: 7px 0 0 9px;}
-.control_block .select_list .arrow {top: 15px;}
+.control_block .select_list .arrow, .control_block .gray_btn .arrow {top: 15px;}
 .control_block .value_list {top: 36px;}
 .user_action .value_list li,
 .control_block .value_list li{padding: 0;border: 0;}
