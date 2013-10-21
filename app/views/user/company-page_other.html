@@ -82,7 +82,7 @@
     </div>
     <div class="main_grid center_block">
         <div class="control_block">
-            <div class="select_list" style="width: 265px;">
+            <div class="select_list" style="width: 604px;">
                 <div class="arrow"></div>
                 <div class="current">
                     <% if(idlc.length>0){ %>
@@ -95,7 +95,7 @@
                     <% } %>
                 </div>
                 <div class="value_list">
-                    <ul style="width: 261px;min-width: 261px;">
+                    <ul style="width: 600px;min-width: 600px;">
                         <li data-id="0"><a href="/user/company_other/<%= pages+'.'+user_id  %>">Все</a>
                         <% for(var j=0; j<catlist.length;j++){ %>
                         <li data-id="<%= j %>"><a href="/user/company_other/<%= pages+'.'+user_id+'.'+catlist[j]['_id'] %>"><%= catlist[j]['title'] %></a></li>
