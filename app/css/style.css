@@ -204,10 +204,7 @@ footer .soc_list li.rss a{background-position: -116px 0px;}
 .form.standard .row label{display: block;float: left;padding: 10px 10px 10px 0;}
 .form.standard .row .top_label{margin-top: 20px;}
 .form.standard .row .top_label label{position: absolute;float: none;color: #9f9f9f;font-size: 14px;top: -37px;}
-.select_list{height: 40px;width: 30%;border: 0;float: left;margin-right: 10px;position: relative;border: 1px solid #cdcdce;cursor: pointer;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+.select_list{height: 40px;width: 30%;border: 0;float: left;margin-right: 10px;position: relative;cursor: pointer;
     background: rgb(249,249,249);
     background: -moz-linear-gradient(top,  rgb(249,249,249) 0%, rgb(229,229,229) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(249,249,249)), color-stop(100%,rgb(229,229,229)));
@@ -216,13 +213,14 @@ footer .soc_list li.rss a{background-position: -116px 0px;}
     background: -ms-linear-gradient(top,  rgb(249,249,249) 0%,rgb(229,229,229) 100%);
     background: linear-gradient(to bottom,  rgb(249,249,249) 0%,rgb(229,229,229) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e5e5e5',GradientType=0 );
-    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.35);
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.35);
-    box-shadow: 0 1px 1px rgba(0,0,0,.35);
 }
 .text_input input,
 .select_list .current{display: block;border: 0;padding: 10px 0 0 6px;background-color: transparent;text-align: left;}
-.select_list select{font-size: 14px;}
+.select_list select{font-size: 14px; border: 1px solid #cdcdce;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 .select_list .current{position: relative;z-index: 2;}
 .form.standard .row .info{text-align: left;color: #8b4d0d;float: left;width: 228px;}
 .form.standard .button{display: inline;}
