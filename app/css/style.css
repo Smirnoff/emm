@@ -38,7 +38,6 @@ textarea{resize: none;}
 .top_block .user_action .select_list ul a:hover{background: #182b37;border-bottom: 1px solid #172833;border-top: 1px solid #16252f;}
 
 .green_btn{display: block;border: 0 !important;background: url(../img/green_btn.png);width: 200px;height: 42px;color: #fff;font-size: 18px;cursor: pointer;}
-.green_btn2{display: block;border: 0 !important;background: url(../img/green_btn2.png);width: 217px;height: 42px;color: #fff;font-size: 18px;cursor: pointer;}
 .purple_btn{display: inline-block;color:#fff;font-size: 18px;padding: 6px 12px;border: 0;cursor: pointer;
     background: rgb(144,127,174);
     background: -moz-linear-gradient(top,  rgb(144,127,174) 0%, rgb(113,98,144) 100%);
