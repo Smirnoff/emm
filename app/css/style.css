@@ -281,7 +281,7 @@ border-bottom-left-radius: 5px;
 
 .control_block{margin: 25px 0;}
 .control_block .select_list{width: 150px;height: 32px;float: left;font-size: 18px;}
-.control_block .select_list .current{padding: 7px 0 0 6px;}
+.control_block .select_list .current{padding: 7px 0 0 9px;}
 .control_block .select_list .arrow {top: 15px;}
 .control_block .value_list {top: 36px;}
 .user_action .value_list li,
