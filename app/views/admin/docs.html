@@ -155,7 +155,7 @@
                         <% if(listdoc[i]["t"]!='1'){ %>
                           <td><a href="/admin/docs/show/<%= listdoc[i]['_id'] %>"><img src="/img/icn_edit.png" /></a></td>
                         <% }else{ %>
-                          <td><a href="/tmp/<%= listdoc[i]['href'] %>"><div><img src="/img/btn_down.png" /></div></a></td>
+                          <td><a href="<%= listdoc[i]['href'] %>"><div><img src="/img/btn_down.png" /></div></a></td>
                         <% } %>
                         <td><a class="delone" href="#" title="/admin/docs/del/<%= listdoc[i]['_id'] %>"><img src="/img/icn_trash.png" /></a></td>
                     </tr>
