@@ -182,6 +182,11 @@ footer .soc_list li.rss a{background-position: -116px 0px;}
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+.form.standard .row .text_input2{background: #fafafa;border: 1px solid #cdcdce;height: 40px;float: left;position: relative;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 .form.standard .row .error{border: 2px solid #ff6b3e;position: relative;}
 .form.standard .row .error_text{display: none;}
 .form.standard .row .error .error_text{display: block;position: absolute;color: #ff6b3e;font-size: 14px;right: -90%;top: 0;width: 85%;}
@@ -230,7 +235,7 @@ border-bottom-left-radius: 5px;
 }
 .select_list .current{height: 32px;overflow: hidden;}
 .select_list .current span{display: block;width: 1000px;}
-.select_list .arrow {position: absolute;right: 12px;top: 17px;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;z-index: 1;}
+.select_list .arrow {position: absolute;right: 15px;top: 17px;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;z-index: 1;}
 .value_list li{padding: 5px;color: #555;border-top: 1px solid #f0f0f0;border-bottom: 1px solid #f0f0f0;cursor: pointer;}
 .value_list li:hover{background: #e1e1e1;border-bottom: 1px solid #fefefe;border-top: 1px solid #d5d6d7;}
 .value_list li a,
