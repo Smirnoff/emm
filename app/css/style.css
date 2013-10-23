@@ -182,11 +182,7 @@ footer .soc_list li.rss a{background-position: -116px 0px;}
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-.form.standard .row .text_input2{background: #fafafa;border: 1px solid #cdcdce;height: 40px;float: left;position: relative;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
+.form.standard .row .text_input2{background: #fafafa;border: none;height: 40px;float: left;position: relative;}
 .form.standard .row .error{border: 2px solid #ff6b3e;position: relative;}
 .form.standard .row .error_text{display: none;}
 .form.standard .row .error .error_text{display: block;position: absolute;color: #ff6b3e;font-size: 14px;right: -90%;top: 0;width: 85%;}
