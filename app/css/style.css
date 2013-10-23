@@ -29,7 +29,7 @@ textarea{resize: none;}
 .top_block .logo:hover{text-decoration: none;cursor: pointer;}
 
 .top_block .user_action{float: right;font-size: 16px;margin-top: 30px; font-weight: normal;}
-.top_block .user_action a{color: #fff;border-bottom: 1px dotted #fff; font-weight: bold; margin-left:5px; margin-right:5px;}
+.top_block .user_action a{color: #fff;border-bottom: 1px dotted #fff; font-weight: bold;}
 .top_block .user_action button{display: inline-block;}
 .top_block .user_action .profile{display: inline-block;position: relative;margin-right: 10px;background: no-repeat url(../img/white_corn.png) right ;padding-right: 15px;cursor: pointer;}
 .top_block .user_action .select_list{background-color: transparent;border: 0;background: none;filter: none;display: inline-block;width: auto;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
