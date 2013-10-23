@@ -330,7 +330,7 @@ border-bottom-left-radius: 5px;
 .sheet table tr td{padding: 10px 0;}
 .sheet .main_description { padding: 10px 20px 10px 10px; }
 .sheet table tr td:first-child,
-.sheet table tr th:first-child{padding-left: 35px;}
+.sheet table tr th:first-child{padding-left: 40px;}
 .sheet table th{text-align: left;font-size: 22px;padding-bottom: 20px;}
 .sheet table th .arrow{display: inline-block;background: url(../img/input.png) no-repeat;width: 13px;height: 7px;margin-left: 10px;position: relative;top: -3px;}
 .sheet table tr:hover td{color: #fff;cursor: pointer;border-collapse: collapse;
