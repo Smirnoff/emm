@@ -371,7 +371,7 @@ border-bottom-left-radius: 5px;
 .jspVerticalBar .jspArrow{height: 16px;}
 .jspHorizontalBar .jspArrow{width: 16px;float: left;height: 100%;}
 .jspVerticalBar .jspArrow,
-.jspVerticalBar .jspArrow:focus{	outline: none;}
+.jspVerticalBar .jspArrow:focus{outline: none;}
 .jspCorner{background: #eeeef4;float: left;height: 100%;}
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
 * html .jspCorner{margin: 0 -3px 0 0;}
