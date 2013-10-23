@@ -15,6 +15,7 @@ textarea{resize: none;}
 .clear{clear: both;height: 0;overflow: hidden;}
 .fl{float: left !important;}
 .fr{float: right !important;}
+.profile_menu{padding: 0;color: #ffffff;}
 
 .main_grid{width: 1000px;margin: 0 auto;}
 .main_grid.gradient{background: url(../img/grad_bg_sized.jpg) center no-repeat; height: 400px;position: relative;}
