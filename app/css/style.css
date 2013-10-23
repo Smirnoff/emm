@@ -15,7 +15,6 @@ textarea{resize: none;}
 .clear{clear: both;height: 0;overflow: hidden;}
 .fl{float: left !important;}
 .fr{float: right !important;}
-.profile_menu{padding: 0;color: #ffffff;}
 
 .main_grid{width: 1000px;margin: 0 auto;}
 .main_grid.gradient{background: url(../img/grad_bg_sized.jpg) center no-repeat; height: 400px;position: relative;}
@@ -32,8 +31,8 @@ textarea{resize: none;}
 .top_block .user_action{float: right;font-size: 16px;margin-top: 30px; font-weight: normal;}
 .top_block .user_action a{color: #fff;border-bottom: 1px dotted #fff; font-weight: bold;}
 .top_block .user_action button{display: inline-block;}
-.top_block .user_action .profile{display: inline-block;position: relative;margin-right: 10px;background: no-repeat url(../img/white_corn.png) right ;padding-right: 15px;cursor: pointer;}
-.top_block .user_action .select_list{background-color: transparent;border: 0;background: none;filter: none;display: inline-block;width: auto;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
+.top_block .user_action .profile{display: inline-block;position: relative;margin-right: 15px;background: no-repeat url(../img/white_corn.png) right ;padding-right: 15px;cursor: pointer;color: #ffffff;}
+.top_block .user_action .select_list{background-color: transparent;border: 0;background: none;filter: none;display: inline-block;width: auto;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;padding: 0;}
 .top_block .user_action .select_list ul{background: #3f4c54;border: 0;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;}
 .top_block .user_action .select_list ul a{border-top: 1px solid #5e6569;border-bottom: 1px solid #172833;color: #fff;font-size: 14px;font-weight: bold;padding: 10px;}
 .top_block .user_action .select_list ul a:hover{background: #182b37;border-bottom: 1px solid #172833;border-top: 1px solid #16252f;}
