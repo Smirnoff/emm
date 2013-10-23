@@ -136,10 +136,10 @@
                     <% }else { %>
                     <td width="40"></td>
                     <% } %>
-                            <td><%= users[j]['organization']%></td>
+                            <td width="165"><%= users[j]['organization']%></td>
                             <% for(var j=0; j<catlist.length;j++){ %>
                                <% if(catlist[j]['_id'] == listdoc[i]['types']){ %>
-                                  <td><%= catlist[j]['title'] %></td>
+                                  <td width="500"><%= catlist[j]['title'] %></td>
                             <% } }%>
                             <td class="date_column"><%= listdoc[i]['date'] %></td>
                         </tr>
