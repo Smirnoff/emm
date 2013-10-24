@@ -61,10 +61,10 @@
                         <div class="clear"></div>
                     </div>
                     <div class="row">
-                        <div class="select_list top_label medium">
+                        <div class="top_label medium">
                             <% if(list.length>0){ %>
                             <label>Тип существенного факта</label>
-                            <select name="types" style="width:450px; height:40px;">
+                            <select name="types" style="width:450px; height:40px;" class="select_list">
                                 <% for(var i=0; i<list.length;i++){ %>
                                 <option name="types" value="<%= list[i]['_id'] %>"><%= list[i]['title'] %></option>
                                 <% }%>
@@ -96,11 +96,11 @@
                         <div class="clear"></div>
                     </div>
                     <div class="row">
-                        <div class="select_list top_label medium">
+                        <div class="top_label medium">
 
                             <% if(list.length>0){ %>
                             <label>Тип существенного факта</label>
-                            <select name="types" id="myType" style="width:450px; height:40px;">
+                            <select name="types" id="myType" style="width:450px; height:40px;" class="select_list">
                                 <% for(var i=0; i<list.length;i++){ %>
                                 <option  value="<%= list[i]['_id'] %>"><%= list[i]['title'] %></option>
                                 <% }%>
