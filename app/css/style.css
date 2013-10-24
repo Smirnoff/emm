@@ -270,8 +270,6 @@ border-bottom-left-radius: 5px;
 .auth_block .right .form.standard{margin-top: 10px;}
 .auth_block .left{width: 30%;float: left;}
 .auth_block .left a{font-size: 18px;border-bottom: 1px dotted #222;}
-.auth_block .left a:hover{text-decoration: none;border-bottom: 0;}
-
 
 .control_block{margin: 25px 0;}
 .control_block .select_list{width: 150px;height: 32px;float: left;font-size: 18px;}
