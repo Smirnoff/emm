@@ -119,15 +119,15 @@
                          <li><a href="/user/company/<%= p1 %>.<%= idlc %>"><img style="margin-top:5px;" src="/img/percol.gif" /></a></li>
                      <% }else{ %>
                           <li><a href="/user/company/0">Первая страница</a></li>
-                          <li><a href="/user/company/<%= p1 %>"><img style="margin-top:5px;" src="/img/percol.gif" /></a></li>
+                          <li><a href="/user/company/<%= p1 %>"><img style="vertical-align: middle;" src="/img/percol.gif" /></a></li>
                      <% } %>
                     <% }else{p2 = 1; }%>
                     <% if(doclists.length>=limits){ %>
                         <% if(idlc.length>0){ %>
-                            <li><a href="/user/company/<%= p2 %>.<%= idlc %>"><img style="margin-top:5px;" src="/img/nextcol.gif" /></a></li>
+                            <li><a href="/user/company/<%= p2 %>.<%= idlc %>"><img style="vertical-align: middle;" src="/img/nextcol.gif" /></a></li>
                             <li><a href="/user/company/<%= last %>.<%= idlc %>">Последняя страница</a></li>
                         <% }else{ %>
-                            <li><a href="/user/company/<%= p2 %>"><img style="margin-top:5px;" src="/img/nextcol.gif" /></a></li>
+                            <li><a href="/user/company/<%= p2 %>"><img style="vertical-align: middle;" src="/img/nextcol.gif" /></a></li>
                             <li><a href="/user/company/<%= last %>">Последняя страница</a></li>
                         <% } %>
                     <% } %>
