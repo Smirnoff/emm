@@ -6,7 +6,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,10 +59,10 @@
                         <textarea id="content" name="bodys"></textarea>
                         <div class="clear"></div>
                     </div>
+                    <label>Тип существенного факта</label>
                     <div class="row">
                         <div class="top_label medium">
                             <% if(list.length>0){ %>
-                            <label>Тип существенного факта</label>
                             <select name="types" style="width:450px; height:40px;" class="select_list">
                                 <% for(var i=0; i<list.length;i++){ %>
                                 <option name="types" value="<%= list[i]['_id'] %>"><%= list[i]['title'] %></option>
@@ -84,9 +83,9 @@
 
                 </form>
                 <form method="post" id="docupload" action="/user/docload">
+                <label>Тип существенного факта</label>
                     <div class="row">
                         <div class="file_upload top_label medium">
-                            <label>Тип существенного факта</label>
                             <div class="up_btn"><span>Выберите файл</span></div>
                            
                             <div class="up_field"></div>
