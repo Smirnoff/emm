@@ -324,7 +324,7 @@ border-bottom-left-radius: 5px;
 .sheet h1{font-size: 36px;font-weight: normal;margin-bottom: 20px;}
 .sheet p{margin-bottom: 20px;}
 .sheet .bottom_text{margin-top: 60px;text-align: right;font-weight: bold;}
-.sheet table{width: 111%;margin: 0 -50px;}
+.sheet table{width: 111%;margin: 0 -50px;padding-bottom: 30px;}
 .sheet table tr td{padding: 10px 0;}
 .sheet .main_description { padding: 10px 20px 10px 10px; }
 .sheet table tr td:first-child,
