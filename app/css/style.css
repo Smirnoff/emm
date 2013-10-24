@@ -320,7 +320,7 @@ border-bottom-left-radius: 5px;
 }
 
 .sheet2{background: #fff;margin-top: 20px;margin-bottom: 40px;padding: 70px 50px;font-size: 18px; word-wrap:break-word; text-overflow: ellipsis; overflow:auto;}
-.sheet{background: #fff;margin-top: 20px;margin-bottom: 40px;padding: 70px 50px;font-size: 18px;}
+.sheet{background: #fff;margin-top: 20px;margin-bottom: 40px;padding: 70px 50px 30px 50px;font-size: 18px;}
 .sheet h1{font-size: 36px;font-weight: normal;margin-bottom: 20px;}
 .sheet p{margin-bottom: 20px;}
 .sheet .bottom_text{margin-top: 60px;text-align: right;font-weight: bold;}
